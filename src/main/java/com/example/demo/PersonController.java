@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/person")
 public class PersonController {
-    private List<Person> personList = new ArrayList<>();
+    private final List<Person> personList = new ArrayList<>();
 
     @GetMapping
     public List<Person> getAllPersons() {
